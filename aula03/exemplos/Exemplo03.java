@@ -1,6 +1,6 @@
 package exemplos;
 
-public class Exemplos03 {
+public class Exemplo03 {
     public static void main(String[] args) {
         int n1, n2;
 
