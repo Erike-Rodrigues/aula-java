@@ -13,7 +13,7 @@ public class Uri1006 {
 
         media = (nota1 * 0.2) + (nota2 * 0.3) + (nota3 * 0.5);
 
-        System.out.printf("MEDIA = %.1f ", media);
+        System.out.printf("MEDIA = %.1f\n", media);
 
         entrada.close();
 
