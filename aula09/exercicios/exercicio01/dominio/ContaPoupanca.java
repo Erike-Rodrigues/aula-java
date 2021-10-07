@@ -1,3 +1,5 @@
+package exercicios.exercicio01.dominio;
+
 public class ContaPoupanca extends Conta {
     //static define um atributo para a classe, e não para cada objeto.
     private static double taxa = 0.1;
