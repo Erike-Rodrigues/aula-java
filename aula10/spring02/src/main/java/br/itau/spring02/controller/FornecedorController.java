@@ -77,8 +77,12 @@ public class FornecedorController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
 
-        repo.deleteById(codigo);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build(); //OK, mas sem conteudo no corpo.
+        try {
+            repo.deleteById(codigo);
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build(); //OK, mas sem conteudo no corpo.
+        } catch (Exception ex) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        }
 
     }
 
